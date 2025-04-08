@@ -1,7 +1,7 @@
 "use strict"
-const add = (a, b) => a + b;
+
+const add = (a, b) => a+b
 htmlOutput("E111", add)
-function htmlOutput(id, arrow){
-    const aux = document.getElementById(`${id}`)
-    aux.innerHTML = arrow
-}
+
+const randomNumber = () => Math.floor(Math.random()*100)
+htmlOutput("E112", randomNumber)
