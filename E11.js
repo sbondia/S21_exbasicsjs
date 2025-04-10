@@ -26,3 +26,4 @@ printNumbers(sampleArray)
 htmlOutput("E114", printNumbers, sampleArray)
 
 
+setTimeout(() => console.log("missatge"),3000);
