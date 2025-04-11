@@ -1,15 +1,11 @@
 "use strict"
-/*
-function htmlOutput(id, func, parameter=null){
-    const aux = document.getElementById(`${id}`)
-    let salida = ''
-    salida += `${func}`+'<br>Output: '
-    salida += func(parameter) || "Este sale por consola o no tiene salida"
-    salida += "<br><br>"
-    aux.innerHTML = salida
+function outputConsoleTitle(id){
+    console.log(`
+        #############
+        APARTADO ${id}:
+        #############`)
 }
-*/
-function outputConsole(id, func, para = ''){
+function outputConsole(id, func, para = null){
     console.log(`
         \n-----------------------
         \nEjercicio: ${id}
