@@ -1,29 +1,28 @@
 "use strict"
 
-const add = (a, b) => a+b
-htmlOutput("E111", add)
 
+const add = (a, b) => a+b
+outputConsole("E111", add)
 
 const randomNumber = () => Math.floor(Math.random()*100)
-htmlOutput("E112", randomNumber)
-
+outputConsole("E112", randomNumber)
 
 class Person{
     constructor(){
     this.name = "name"
     }
-    greet = () => console.log(`Hola, ${this.name}.`)
+    greet = () => `Hola, ${this.name}.`
 }
 const person = new Person()
-htmlOutput("E113", person.greet)
+outputConsole("E113", person.greet)
 
 
 const sampleArray = [1, 2, 3]
 function printNumbers(array){
-    array.forEach((num) => {console.log(num)})
+    let aux = ''
+    array.forEach((num) => {aux = num+' '})
+    return aux
 }
-printNumbers(sampleArray)
-htmlOutput("E114", printNumbers, sampleArray)
+outputConsole("E114", printNumbers, sampleArray)
 
-
-setTimeout(() => console.log("missatge"),3000);
+outputConsole("E115", setTimeout, () => "3s",3000)
