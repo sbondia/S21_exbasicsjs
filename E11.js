@@ -20,13 +20,13 @@ const person = new Person()
 outputConsole("E113", person.greet)
 
 //E114
-const sampleArray = [1, 2, 3]
+const array1 = [1, 2, 3]
 function printNumbers(array){
     let aux = ''
     array.forEach((num) => {aux += num+' '})
     return aux
 }
-outputConsole("E114", printNumbers, sampleArray)
+outputConsole("E114", printNumbers, array1)
 
 //E115
 outputConsole("E115", setTimeout, () => "3s",3000)
