@@ -5,11 +5,10 @@ function outputConsoleTitle(id){
         APARTADO ${id}:
         #############`)
 }
-function outputConsole(id, func, para = null){
-    console.log(`
-        \n-----------------------
+function outputConsole(id, func, para1 = null, para2 = null){
+    console.log(`\n-----------------------
         \nEjercicio: ${id}
         \nFuncion: ${func}
-        \nSalida: ${func(para)}
+        \nSalida: ${func(para1, para2)}
     `)
 }

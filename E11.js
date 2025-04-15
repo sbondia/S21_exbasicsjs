@@ -23,7 +23,7 @@ outputConsole("E113", person.greet)
 const sampleArray = [1, 2, 3]
 function printNumbers(array){
     let aux = ''
-    array.forEach((num) => {aux = num+' '})
+    array.forEach((num) => {aux += num+' '})
     return aux
 }
 outputConsole("E114", printNumbers, sampleArray)
