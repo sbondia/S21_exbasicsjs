@@ -1,19 +1,18 @@
 "use strict"
-/*
-function htmlOutput(id, func, parameter=null){
-    const aux = document.getElementById(`${id}`)
-    let salida = ''
-    salida += `${func}`+'<br>Output: '
-    salida += func(parameter) || "Este sale por consola o no tiene salida"
-    salida += "<br><br>"
-    aux.innerHTML = salida
-}
-*/
-function outputConsole(id, func, para = ''){
+function outputConsoleTitle(id){
     console.log(`
-        \n-----------------------
+        #############
+        APARTADO ${id}:
+        #############`)
+}
+function outputConsole(id, func, para1 = null, para2 = null){
+    console.log(`\n-----------------------
         \nEjercicio: ${id}
         \nFuncion: ${func}
-        \nSalida: ${func(para)}
+        \nArgumentos: ${checkNull(para1)} | ${checkNull(para2)}
+        \nSalida: ${func(para1, para2)}
     `)
+}
+function checkNull(variable){
+    return (variable) ? variable : ''
 }
