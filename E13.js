@@ -31,3 +31,13 @@ function esperarISaludar(nom, func){
     setTimeout(()=> func(nom), 2000)
 }
 outputConsole("E133", esperarISaludar, nom, funcNom)
+
+//E134
+const array3 = [3,43,1,6,23]
+function plusTwo(num){
+    return num+2
+}
+function processarElements(array, func){
+    return array.map(num=> func(num))
+}
+outputConsole("E134", processarElements, array3, plusTwo)
