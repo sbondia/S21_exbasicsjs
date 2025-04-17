@@ -10,3 +10,14 @@ function processar(nombre, callback){
     return callback(nombre)
 }
 outputConsole("E131", processar, nombre, callback)
+
+//E132
+let num3 = 25
+let num4 = 85
+function suma(num1, num2){
+    return num1+num2
+}
+function calculadora(num1, num2, callback){
+    return callback(num1, num2)
+}
+outputConsole("E132", calculadora, num3, num4, suma)
