@@ -41,3 +41,13 @@ function processarElements(array, func){
     return array.map(num=> func(num))
 }
 outputConsole("E134", processarElements, array3, plusTwo)
+
+//E135
+let string1 = "Electroencefalografista"
+function plusDoctor(string){
+    return string+': Dr. Cabeza'
+}
+function processarCadena(string, func){
+    return func(string.toUpperCase())
+}
+outputConsole("E135", processarCadena, string1, plusDoctor)
