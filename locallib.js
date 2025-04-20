@@ -5,6 +5,15 @@ function outputConsoleTitle(id){
         APARTADO ${id}:
         #############`)
 }
+function outputConsole(id, func, ...para){
+    console.log(`\n-----------------------
+        \nEjercicio: ${id}
+        \nFuncion: ${func}
+        \nArgumentos: ${para.map(arg=> " "+arg)}
+        \nSalida: ${func(...para)}
+    `)
+}
+/*
 function outputConsole(id, func, para1 = null, para2 = null, para3 = null){
     console.log(`\n-----------------------
         \nEjercicio: ${id}
@@ -16,3 +25,4 @@ function outputConsole(id, func, para1 = null, para2 = null, para3 = null){
 function checkNull(variable){
     return (variable) ? variable : ''
 }
+*/
