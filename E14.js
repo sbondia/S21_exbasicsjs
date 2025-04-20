@@ -10,3 +10,9 @@ outputConsole("E141", array412)
 
 //E142
 
+function suma142(...nums){
+    let aux = 0
+    nums.forEach(num=> aux+=num)
+    return aux
+}
+outputConsole("E142", suma142, num1, num2, num3, num4)
