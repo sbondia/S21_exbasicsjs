@@ -14,3 +14,8 @@ outputConsole("E162", noms161)
 const array163 = [1, 2, 3, 4, 5, 6]
 const array163_2 = array163.filter(num=> num%2==0)
 outputConsole("E163", array163_2)
+
+//E164
+const obj164 = {nom: 'Ona', edat: 25, ciutat: 'Barcelona'}
+//for(let atr in obj164) {console.log(`${atr}: ${obj164[atr]}`)}
+outputConsole("E164", obj164)
