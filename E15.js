@@ -25,3 +25,9 @@ outputConsole("E154", result154)
 const array155 = [1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9]
 let result155 = array155.filter(num=> num>=10).map(num=> num*2).reduce((aux, num)=> aux+num)
 outputConsole("E155", result155)
+
+//E156
+const array156 = [11, 12, 13, 14]
+let result156 = array156.every(num=> num>10)
+let result156_2 = array156.some(num=> num>10)
+outputConsole("E156", [result156, result156_2])
