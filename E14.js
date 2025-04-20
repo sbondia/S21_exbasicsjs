@@ -27,3 +27,10 @@ const array44 = ["azul", "rojo", 1, 2, 3]
 let [color1, color2, ...numeros] = array44
 //console.log(color1, color2, numeros)
 outputConsole("E144", array44)
+
+//E145
+const array45 = [1, 2, 3]
+function spreadFunc(arg1, arg2, arg3){
+    return arg1+arg2+arg3
+}
+outputConsole("E145", spreadFunc, ...array45)
