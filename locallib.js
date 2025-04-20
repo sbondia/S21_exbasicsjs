@@ -14,13 +14,16 @@ function outputConsole(id, func, ...para){
             \nSalida: ${func(...para)}
         `)
     }catch(errNoFunc){
-        const errLine = errNoFunc.stack.split('\n')
-        const errAt = errLine[1].replace("@http://127.0.0.1:5500/","")
-        const err = errAt.split(':')
+        const err = errAt(errNoFunc)
         console.log(`\n-----------------------
             \nEjercicio: ${id}
             \nSalida: ${func}
             \n## Este ejercicio no es una funcion, el desarrollo esta en el archivo: ${err[0]}, linea: ${err[1]} ##
         `)
     }
+}
+function errAt(err){
+    const errLines = err.stack.split('\n')
+    const errLine = errLines[1].replace("@http://127.0.0.1:5500/","")
+    return errLine.split(':')
 }
