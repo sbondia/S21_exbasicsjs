@@ -15,3 +15,8 @@ outputConsole("E152", array152_2)
 const array153 = [1, 10, 8, 11]
 let found153 = array153.find(num=> num>10)
 outputConsole("E153", found153)
+
+//E154
+const array154 = [13, 7, 8, 21]
+let result154 = array154.reduce((aux, num)=> aux-num)
+outputConsole("E154", result154)
