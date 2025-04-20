@@ -20,3 +20,8 @@ outputConsole("E153", found153)
 const array154 = [13, 7, 8, 21]
 let result154 = array154.reduce((aux, num)=> aux-num)
 outputConsole("E154", result154)
+
+//E155
+const array155 = [1, 3, 7, 10 ,15, 17, 11, 5, 8, 12, 9]
+let result155 = array155.filter(num=> num>=10).map(num=> num*2).reduce((aux, num)=> aux+num)
+outputConsole("E155", result155)
