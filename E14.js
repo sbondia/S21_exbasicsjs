@@ -19,4 +19,11 @@ outputConsole("E142", suma142, num1, num2, num3, num4)
 const obj1 = {atr1: 1, atr2: 2}
 const obj2 = {...obj1}
 obj2.atr1 = 11
+//console.log(obj2)
 outputConsole("E143", obj2)
+
+//E144
+const array44 = ["azul", "rojo", 1, 2, 3]
+let [color1, color2, ...numeros] = array44
+//console.log(color1, color2, numeros)
+outputConsole("E144", array44)
