@@ -19,3 +19,17 @@ outputConsole("E163", array163_2)
 const obj164 = {nom: 'Ona', edat: 25, ciutat: 'Barcelona'}
 //for(let atr in obj164) {console.log(`${atr}: ${obj164[atr]}`)}
 outputConsole("E164", obj164)
+
+//E165
+for(let num of array163){
+    console.log(num)
+    if(num==5) {break}
+}
+outputConsole("E165", array163)
+
+//E166
+for(let nom of noms161){
+    let index = noms161.indexOf(nom)
+    console.log(`${index}: ${nom}`)
+}
+outputConsole("E166", noms161)
