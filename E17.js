@@ -6,6 +6,9 @@ outputConsoleTitle("E17")
 //setTimeout(()=> {resolve(console.log("Hola, món")), 2000}
 
 //E171
-const myPromise = new Promise(resolve=> {
-    setTimeout(()=>resolve(console.log("Hola, món")), 2000)
+const myPromise = new Promise((resolve)=> {
+    setTimeout(()=>resolve("Hola, món"), 2000)
 })
+
+//E172
+myPromise.then((salida)=> console.log(salida))
