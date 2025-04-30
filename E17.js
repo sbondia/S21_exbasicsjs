@@ -35,3 +35,12 @@ async function pause2(){
         console.log(err+' -> 175')
     }
 }
+
+//176
+const myPromise1761 = new Promise((resolve)=> {
+    setTimeout(()=>resolve("resolve2s"), 2000)
+})
+const myPromise1762 = new Promise((resolve)=> {
+    setTimeout(()=>resolve("resolve3s"), 3000)
+})
+Promise.all([myPromise1761, myPromise1762]).then(promise=> promise.forEach(msg=> console.log(msg)))
