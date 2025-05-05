@@ -18,7 +18,7 @@ outputConsole("E153", found153)
 
 //E154
 const array154 = [13, 7, 8, 21]
-let result154 = array154.reduce((aux, num)=> aux-num)
+let result154 = array154.reduce((aux, num)=> aux+num)
 outputConsole("E154", result154)
 
 //E155
